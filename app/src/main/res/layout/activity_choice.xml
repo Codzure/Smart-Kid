@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/bgapp"
-    tools:context=".MainActivity">
+    tools:context=".ChoiceActivity">
 
     <TextView
         android:id="@+id/tv_results"
@@ -21,7 +21,7 @@
 
     <TextView
         android:id="@+id/textScreen"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:textColor="#FFF"
         android:textSize="22sp"
@@ -30,61 +30,61 @@
         android:text="What would you like to learn today?" />
 
 
-    <ImageView
+    <soup.neumorphism.NeumorphImageView
         android:id="@+id/bigboss"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:src="@drawable/ic_education"
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="200dp" />
 
 
-    <TextView
+    <soup.neumorphism.NeumorphTextView
         android:id="@+id/animalsOptionOne"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/default_option_border_bg"
+        android:background="@color/backgroundColor"
         android:gravity="center"
         android:padding="15dp"
         android:textColor="#7A8089"
         android:textSize="18sp"
         tools:text="Animals" />
 
-    <TextView
+    <soup.neumorphism.NeumorphTextView
         android:id="@+id/englishOptionOne"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/default_option_border_bg"
+        android:background="@color/backgroundColor"
         android:gravity="center"
         android:padding="15dp"
         android:textColor="#7A8089"
         android:textSize="18sp"
         tools:text="English" />
 
-    <TextView
+    <soup.neumorphism.NeumorphTextView
         android:id="@+id/mathOptionOne"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/default_option_border_bg"
+        android:background="@color/backgroundColor"
         android:gravity="center"
         android:padding="15dp"
         android:textColor="#7A8089"
         android:textSize="18sp"
         tools:text="Maths" />
 
-    <TextView
+    <soup.neumorphism.NeumorphTextView
         android:id="@+id/shapeOptionOne"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/default_option_border_bg"
+        android:background="@color/backgroundColor"
         android:gravity="center"
         android:padding="15dp"
         android:textColor="#7A8089"

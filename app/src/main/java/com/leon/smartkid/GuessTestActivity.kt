@@ -3,7 +3,6 @@ package com.leon.smartkid
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Typeface
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.view.View
@@ -13,12 +12,13 @@ import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 
 class GuessTestActivity : AppCompatActivity() {
     private var presCounter = 0
     private var maxPresCounter = 4
-    private var keys = arrayOf("F", "I", "B", "H", "S")
+    private var keys = arrayOf("f", "i", "b", "h", "s")
     private var textScreen: TextView? = null
     private var textQuestion: TextView? = null
     private var textTitle: TextView? = null
@@ -65,7 +65,7 @@ class GuessTestActivity : AppCompatActivity() {
         textView.text = text
         textView.isClickable = true
         textView.isFocusable = true
-        textView.textSize = 12f
+        textView.textSize = 16f
         val typeface = Typeface.createFromAsset(assets, "fonts/FredokaOneRegular.ttf")
         textQuestion = findViewById<View>(R.id.textQuestion) as TextView
         textScreen = findViewById<View>(R.id.textScreen) as TextView
@@ -92,7 +92,7 @@ class GuessTestActivity : AppCompatActivity() {
         presCounter = 0
         val editText = findViewById<EditText>(R.id.editText)
         val linearLayout = findViewById<LinearLayout>(R.id.layoutParent)
-        val textAnswer = "FISH"
+        val textAnswer = "fish"
         if (editText.text.toString() == textAnswer) {
             val a = Intent(this@GuessTestActivity, MainActivity::class.java)
             startActivity(a)

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Smart Kid</string>
+    <string name="smart_kid">Smart Kid</string>
+    <string name="result">Result</string>
+    <string name="hey_congratulations">Hey, Congratulations!</string>
+    <string name="submit">Submit</string>
+    <string name="access_more_learning_resources">Access more learning resources</string>
 </resources>
