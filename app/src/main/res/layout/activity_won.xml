@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:padding="20dp"
-    tools:context=".MainActivity">
+    tools:context=".results.WonActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/my_toolbar"
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:text="Result"
+        android:text="@string/result"
         android:textColor="@android:color/white"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -38,7 +38,7 @@
         android:id="@+id/tv_congratulations"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hey, Congratulations!"
+        android:text="@string/hey_congratulations"
         android:layout_marginTop="12dp"
         android:textColor="@android:color/white"
         android:textSize="25sp"
@@ -70,7 +70,7 @@
         android:textAllCaps="false"
         android:layout_marginTop="4dp"
         android:background="@drawable/bgbtn"
-        android:text="Submit"
+        android:text="@string/submit"
         android:textSize="18sp" />
 
     <TextView
@@ -81,5 +81,5 @@
         android:textSize="22sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Access more learning resources" />
+        android:text="@string/access_more_learning_resources" />
 </LinearLayout>

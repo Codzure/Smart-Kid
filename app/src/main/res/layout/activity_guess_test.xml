@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/bgapp"
-    tools:context=".MainActivity">
+    tools:context=".GuessTestActivity">
 
 
     <TextView
@@ -16,13 +16,17 @@
         android:textSize="24sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Smart Kid" />
+        android:text="@string/smart_kid" />
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
 
     <LinearLayout
         android:id="@+id/someLayout"
-        android:layout_marginTop="50dp"
         android:layout_gravity="center"
-        android:background="@drawable/bgquestion"
+
         android:orientation="vertical"
         android:gravity="center"
         android:layout_width="290dp"
@@ -31,7 +35,7 @@
         <TextView
             android:textAlignment="center"
             android:id="@+id/textQuestion"
-            android:textColor="#332FA2"
+            android:textColor="#ffffff"
             android:textSize="16sp"
             android:layout_width="wrap_content"
             android:lineSpacingExtra="6dp"
@@ -39,6 +43,8 @@
             android:text="Guess an Animal name from below characters" />
 
     </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
+
 
     <EditText
         android:id="@+id/editText"
@@ -46,18 +52,18 @@
         android:padding="10dp"
         android:clickable="false"
         android:focusable="false"
-        android:textColor="#332FA2"
+        android:textColor="#000000"
         android:gravity="center"
+        android:background="@color/backgroundColor"
         android:textAllCaps="false"
         android:layout_gravity="center"
         android:layout_marginTop="70dp"
-        android:background="@drawable/bgpurple"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/textTitle"
-        android:text="Letters"
+        android:text="Arrange the letters to form a name"
         android:textSize="16sp"
         android:textColor="#FFF"
         android:fontFamily="sans-serif"
